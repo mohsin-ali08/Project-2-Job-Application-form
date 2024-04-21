@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #ccc;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.apply-box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: rgba(1, 1, 1, 0.1);
+  border-radius: 10px;
+}
+h1 {
+  font-family: "Racing Sans One", sans-serif;
+  text-align: center;
+}
+.title-small {
+  font-size: 1rem;
+}
+.form-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 15px;
+}
+input:focus {
+  outline-color: rgb(255, 166, 0);
+}
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+button {
+  background-color: #000;
+  border: transparent solid 2px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  background-color: #aaa;
+  border: 2px solid #0008;
+  color: #000;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+.text_area {
+  grid-column: 1 / span 2;
+}
+.text_area textarea {
+  width: 100%;
+}
+@media (max-width: 460px) {
+  .text_area {
+    grid-column: 1 / span 1;
+  }
+}
